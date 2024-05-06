@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel = "stylesheet" href="./style2.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="description" content = "zenithpage">
+
+
+    <script type="text/javascript">
+        function refreshIframes() {
+            var iframes = document.getElementsByTagName('iframe');
+            for (var i = 0; i < iframes.length; i++) {
+                iframes[i].src = iframes[i].src;
+            }
+        }
+        setInterval(refreshIframes, 10000); // Refresh every 1000 milliseconds (1 second)
+    </script>
+</head>
+
+
+<body>
+    <h1 class="title"><img src="image/logob.png" ></h1>
+    <div class="triangle"></div>
+    <div class="boxy"></div>
+    <div class="arrowO">
+        <div class="horizontal-line firstO"></div>
+        <div class="vertical-lineO"></div>
+        <div class="horizontal-line secondO"></div>
+        <div class="arrow-headO"></div>
+    </div>
+    
+    
+
+
+
+    <!-- <h1 class="live"><img src="image/live.png" ></h1> -->
+    <div class="loading-bar"></div>
+
+
+
+    <div class="iframe-container">
+        <h2 class="NLong">
+            <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR4Nh5thkk8hTR_nk6uYMJT3lS8e9vnjLWtnh8Kqb0TF-Gw8Hc47YsvZ_AwMeki2VZnRPpS-UOyA23-/pubchart?oid=1276935713&amp;format=interactive"style="width:100%; height:600px;"></iframe>
+        </h2>
+        
+        <h2 class="NShort">
+            <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR4Nh5thkk8hTR_nk6uYMJT3lS8e9vnjLWtnh8Kqb0TF-Gw8Hc47YsvZ_AwMeki2VZnRPpS-UOyA23-/pubchart?oid=642004164&amp;format=interactive"style="width:100%; height:600px;"></iframe>
+        </h2>
+        <h2 class="Etried">
+            <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR4Nh5thkk8hTR_nk6uYMJT3lS8e9vnjLWtnh8Kqb0TF-Gw8Hc47YsvZ_AwMeki2VZnRPpS-UOyA23-/pubchart?oid=354035274&amp;format=interactive"style="width:100%; height:600px;"></iframe>
+        </h2>
+        <h2 class="Eexecuted">
+            <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR4Nh5thkk8hTR_nk6uYMJT3lS8e9vnjLWtnh8Kqb0TF-Gw8Hc47YsvZ_AwMeki2VZnRPpS-UOyA23-/pubchart?oid=264399093&amp;format=interactive"style="width:100%; height:600px;"></iframe>
+        </h2>
+        <h2 class="CET">
+            <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR4Nh5thkk8hTR_nk6uYMJT3lS8e9vnjLWtnh8Kqb0TF-Gw8Hc47YsvZ_AwMeki2VZnRPpS-UOyA23-/pubchart?oid=692405292&amp;format=interactive"style="width:100%; height:600px;"></iframe>
+        </h2>
+        <h2 class="Cdirection">
+            <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR4Nh5thkk8hTR_nk6uYMJT3lS8e9vnjLWtnh8Kqb0TF-Gw8Hc47YsvZ_AwMeki2VZnRPpS-UOyA23-/pubchart?oid=351853495&amp;format=interactive"style="width:100%; height:100%"></iframe>
+        </h2>
+
+    </div>
+
+
+    <h2 class="subtitle"><img src="image/shiyousai.png" ></h2>
+    
+
+    <h3 class="sstitle today"><img src="image/today.png" ></h3>
+    <h3 class="sstitle week"><img src="image/week.png" ></h3>
+    <h3 class="sstitle total"><img src="image/total.png" ></h3>
+    <h3 class="sstitle shiyousai"><img src="image/other.png" ></h3>
+
+    <!-- マウスカーソルよう -->
+    <a href="index.html">
+        <div class="box1"></div>
+    </a>
+
+    <a href="week.html">
+        <div class="box2"></div>
+    </a>
+
+    <a href="total.html">
+        <div class="box3"></div>
+    </a>
+
+    
+    <div class="box4">
+        <div class="side-menu">
+            <ul>
+                <li><a href="Exlong.html">Executed Long Analysis</a></li>
+                <li><a href="Clong.html">Analysis for each Long condition</a></li>
+                <li><a href="Exshort.html">Executed Short Analysis</a></li>
+                <li><a href="Cshort.html">Analysis for each Short condition</a></li>
+                <li><a href="others.html">Other Analysis</a></li>
+
+            </ul>
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+
+</body>
+</html>

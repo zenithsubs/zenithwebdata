@@ -1,0 +1,787 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    box-shadow: none;
+}
+
+li{
+    color: white;
+}
+
+a{
+    color: white;
+}
+
+h2.ps,
+h2.pl,
+h2.pt {
+    max-width: 250px; /* 最大幅を300ピクセルに設定 */
+  }
+  
+
+.title {
+    position: absolute; /* または absolute や fixed */
+    top: 200px;
+    left:200px;
+    right: 200px;
+    bottom: 200px;
+    
+}
+
+
+/* デザイン */
+.triangle {
+    position: absolute;
+    top: 150px;
+    left: 100px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 100px 100px 0; /* 上 右 下 左 */
+    border-color: transparent transparent black transparent; /* 上 右 下 左 */
+    transform: rotate(90deg); /* 45度に回転 */
+
+}
+
+
+
+
+.boxy {
+  position: absolute;
+  top: 25px;
+  left: 858px;
+  width: 995px; /* 箱の幅 */
+  height: 912px; /* 箱の高さ */
+  background-color: rgba(255, 255, 255, 0); /* 背景色を黒に設定 */
+  border: 2px solid #000; /* 黒い枠線を追加 */
+  z-index: 10;
+}
+
+
+
+/* ロード */
+.loading-bar {
+  top: 285px;
+  left: 200px;
+  width: 550px; /* 全幅 */
+  height: 5px; /* 線の高さ */
+  background-color: rgb(255, 255, 255); /* 線の色 */
+  position: relative;
+  overflow: hidden; /* 内部のアニメーションがはみ出さないように制限 */
+}
+
+.loading-bar::before {
+  content: "";
+  position: absolute;
+  left: 10px; /* 最初は見えない位置に設定 */
+  width: 100px; /* アニメーションの幅 */
+  height: 100%;
+  background-color: black; /* アニメーションの色 */
+  animation: load 2s linear infinite; /* アニメーションの設定 */
+}
+
+@keyframes load {
+  0% {
+    left: -50%; /* 左からスタート */
+  }
+  100% {
+    left: 100%; /* 右まで移動 */
+  }
+}
+
+
+
+.live {
+    position: absolute; /* または absolute や fixed */
+    top: 700px;
+    left:880px;
+    right: 200px;
+    bottom: 200px;
+    
+    
+}
+.amounttdy {
+    position: absolute; /* または absolute や fixed */
+    top: 750px;
+    left:880px;
+    right: 200px;
+    bottom: 400px;
+    
+}
+.amounttdy img {
+    width: 20%;
+    height: auto;
+}
+
+
+/* WR jyouji */
+
+
+.lw {
+    position: absolute; /* または absolute や fixed */
+    top: 50px;
+    left: 1600px;
+    bottom: 200px;
+    
+}
+
+.sw {
+    position: absolute; /* または absolute や fixed */
+    top: 150px;
+    left: 1600px;
+    bottom: 200px;
+    
+}
+
+.bw {
+    position: absolute; /* または absolute や fixed */
+    top: 250px;
+    left: 1600px;
+    bottom: 200px;
+    
+}
+
+.lw img,.sw img,.bw img{
+    width: 50%;
+    height: auto;
+      
+}
+
+
+.subtitle {
+    position: absolute; /* または absolute や fixed */
+    top: 300px;
+    left:500px;
+    right: 200px;
+    bottom: 200px;
+    
+}
+
+
+.graph1 {
+    position: absolute;
+    top: 25px;
+    left: 860px;
+    width: 700px; /* グラフの幅を200ピクセルに設定 */
+    height: 350px; /* グラフの高さを150ピクセルに設定 */
+    overflow: hidden; /* はみ出た部分を隠す */
+
+    
+}
+
+
+.graph3 {
+    position: absolute;
+    top: 332px;
+    left: 860px;
+    width: 1000px; /* グラフの幅を200ピクセルに設定 */
+    height: 300px; /* グラフの高さを150ピクセルに設定 */
+    overflow: hidden; /* はみ出た部分を隠す */
+    z-index: 10;
+
+}
+
+
+
+.graph2 {
+    position: absolute;
+    top: 630px;
+    left: 1162px;
+    width: 700px;
+    height: 300px;
+    overflow: hidden;
+
+    background-color: transparent; /* 背景を透明に設定 */
+}
+
+
+
+
+.sstitle img{
+    position:relative;
+    top: 300px;
+    left: 200px;
+    margin: 50px;
+    width: 50px;  /* 幅を200ピクセルに設定 */
+    height: auto;  /* 高さを自動調整してアスペクト比を保持 */
+  }
+
+/* グラフ文字 */
+.amttdy {
+    position: absolute;
+    top: 830px;
+    left: 1000px;
+    width: 700px;
+    height: 100px;
+    overflow: hidden;
+
+    background-color: transparent; /* 背景を透明に設定 */
+}
+.pl {
+    position: absolute;
+    top: 50px;
+    left: 1700px;
+    width: 150px;
+    height: 100px;
+    overflow: hidden;
+    margin: 0,0,0,0;
+
+    background-color: transparent; /* 背景を透明に設定 */
+}
+.ps {
+    position: absolute;
+    top: 150px;
+    left: 1700px;
+    width: 150px;
+    height: 100px;
+    overflow: hidden;
+
+    background-color: transparent; /* 背景を透明に設定 */
+}
+.pt {
+    position: absolute;
+    top: 250px;
+    left: 1700px;
+    width: 150px;
+    height: 100px;
+    overflow: hidden;
+
+    background-color: transparent; /* 背景を透明に設定 */
+}
+
+
+/* 
+マウスカーソル用 */
+.box1 {
+    position: absolute;
+    top: 328px;
+    left: 222px;
+    width: 100px;
+    height: 60px;
+    border: 1px solid transparent; /* 最初は透明なボーダー */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border-color 0.5s ease; /* ボーダー色の変化を0.5秒間かけて適用 */
+  }
+.box1:hover {
+border-color: rgb(0, 0, 0); /* ホバー時に青いボーダーを表示 */
+}
+
+.box2 {
+    position: absolute;
+    top: 460px;
+    left: 222px;
+    width: 100px;
+    height: 60px;
+    border: 1px solid transparent; /* 最初は透明なボーダー */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border-color 0.5s ease; /* ボーダー色の変化を0.5秒間かけて適用 */
+  }
+.box2:hover {
+border-color: rgb(0, 0, 0); /* ホバー時に青いボーダーを表示 */
+}
+.box3 {
+    position: absolute;
+    top: 590px;
+    left: 222px;
+    width: 100px;
+    height: 60px;
+    border: 1px solid transparent; /* 最初は透明なボーダー */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border-color 0.5s ease; /* ボーダー色の変化を0.5秒間かけて適用 */
+  }
+.box3:hover {
+border-color: rgb(0, 0, 0); /* ホバー時に青いボーダーを表示 */
+}
+
+
+
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 1; }
+}
+
+.box4 {
+    position: absolute;
+    top: 720px;
+    left: 222px;
+    width: 100px;
+    height: 60px;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border-color 0.5s ease;
+    overflow: visible; /* オーバーフローをvisibleに設定 */
+    z-index: 100; /* 必要に応じてz-indexを設定 */
+}
+
+.side-menu {
+    position: absolute;
+    top: 0;
+    left: 100px; /* box4の幅を基に調整 */
+    width: 300px;
+    height: 300%;
+    background-color: black;
+    color: white;
+    opacity: 0; /* 初期透明度を0に設定 */
+    transition: transform 0.5s, opacity 0.5s; /* transformとopacityの変化にトランジション適用 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.box4:hover .side-menu {
+    transform: translateX(0); /* ホバー時に表示 */
+    opacity: 1; /* ホバー時に完全に不透明に */
+}
+
+.box4:hover {
+    border-color: rgb(0, 0, 0); /* ホバー時に青いボーダーを表示 */
+}
+
+  
+
+
+
+
+                                        /* 矢印 INDEX*/
+/* キーフレームの定義 */
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 1; }
+}
+
+/* 最初の水平線のアニメーション */
+.horizontal-line.first {
+    animation: fadeInOut 3s ease-in-out forwards;
+}
+
+/* 垂直線のアニメーション */
+.vertical-line {
+    animation: fadeInOut 3s ease-in-out 1.5s forwards; /* 1.5秒遅延で開始 */
+}
+
+/* 二番目の水平線のアニメーション */
+.horizontal-line.second {
+    animation: fadeInOut 3s ease-in-out 3s forwards; /* 3秒遅延で開始 */
+}
+
+/* 矢印の頭のアニメーション */
+.arrow-head {
+    animation: fadeInOut 3s ease-in-out 3s forwards; /* 4.5秒遅延で開始 */
+}
+
+.arrow {
+    position:absolute;
+    top: 350px;
+    left: 350px;
+    width: 500px; /* 全体の幅を設定 */
+    height: 200px; /* 全体の高さを設定 */
+}
+
+.horizontal-line {
+    position: absolute;
+    height: 2px; /* 線の太さ */
+    background-color: black;
+    opacity: 0;
+}
+
+.horizontal-line.first {
+    width: 30%; /* 最初の水平線の長さ */
+    top: 10%;
+    left: 0;
+    opacity: 0;
+}
+
+.vertical-line {
+    position: absolute;
+    width: 2px; /* 線の太さ */
+    height: 60%; /* 垂直線の長さ */
+    top: 10%;
+    left: 30%;
+    background-color: black;
+    opacity: 0;
+}
+
+.horizontal-line.second {
+    width: 70%; /* 二番目の水平線の長さ */
+    top: 70%;
+    left: 30%;
+    background-color: black;
+    opacity: 0;
+}
+
+.arrow-head {
+    position: absolute;
+    top: 68%; /* 矢印の頭部の位置調整 */
+    left: calc(100% - 10px); /* 矢印の頭部が線の端に来るように */
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 0 5px 10px; /* 矢印のサイズ調整 */
+    border-color: transparent transparent transparent black;
+    opacity: 0;
+}
+
+
+
+
+
+                                        /* 矢印 WEEK*/
+/* キーフレームの定義 */
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 1; }
+}
+
+
+/* 二番目の水平線のアニメーション */
+.horizontal-line.second2 {
+    animation: fadeInOut 3s ease-in-out forwards;
+}
+
+/* 矢印の頭のアニメーション */
+.arrow-head2 {
+    animation: fadeInOut 3s ease-in-out forwards;
+}
+
+.arrow2 {
+    position:absolute;
+    top: 350px;
+    left: 350px;
+    width: 500px; /* 全体の幅を設定 */
+    height: 200px; /* 全体の高さを設定 */
+}
+
+.horizontal-line2 {
+    position: absolute;
+    height: 2px; /* 線の太さ */
+    background-color: black;
+    opacity: 0;
+}
+
+
+
+.horizontal-line.second2 {
+    width: 100%; /* 二番目の水平線の長さ */
+    top: 70%;
+    left: 0%;
+    background-color: black;
+    opacity: 0;
+}
+
+.arrow-head2 {
+    position: absolute;
+    top: 68%; /* 矢印の頭部の位置調整 */
+    left: calc(100% - 10px); /* 矢印の頭部が線の端に来るように */
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 0 5px 10px; /* 矢印のサイズ調整 */
+    border-color: transparent transparent transparent black;
+    opacity: 0;
+}
+
+
+
+
+
+                                        /* 矢印 TOTAL*/
+/* キーフレームの定義 */
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 1; }
+}
+
+/* 最初の水平線のアニメーション */
+.horizontal-line.firstT {
+    animation: fadeInOut 3s ease-in-out forwards;
+}
+
+/* 垂直線のアニメーション */
+.vertical-lineT {
+    animation: fadeInOut 3s ease-in-out 1.5s forwards; /* 1.5秒遅延で開始 */
+}
+
+/* 二番目の水平線のアニメーション */
+.horizontal-line.secondT {
+    animation: fadeInOut 3s ease-in-out 3s forwards; /* 3秒遅延で開始 */
+}
+
+/* 矢印の頭のアニメーション */
+.arrow-headT {
+    animation: fadeInOut 3s ease-in-out 3s forwards; /* 4.5秒遅延で開始 */
+}
+
+.arrowT {
+    position:absolute;
+    top: 610px;
+    left: 350px;
+    width: 500px; /* 全体の幅を設定 */
+    height: 200px; /* 全体の高さを設定 */
+}
+
+.horizontal-lineT {
+    position: absolute;
+    height: 2px; /* 線の太さ */
+    background-color: black;
+    opacity: 0;
+}
+
+.horizontal-line.firstT {
+    width: 30%; /* 最初の水平線の長さ */
+    top: 10%;
+    left: 0;
+    opacity: 0;
+}
+
+.vertical-lineT {
+    position: absolute;
+    width: 2px; /* 線の太さ */
+    height: 70%; /* 垂直線の長さ */
+    top: -59%;
+    left: 30%;
+    background-color: black;
+    opacity: 0;
+}
+
+.horizontal-line.secondT {
+    width: 70%; /* 二番目の水平線の長さ */
+    top: -60%;
+    left: 30%;
+    background-color: black;
+    opacity: 0;
+}
+
+.arrow-headT {
+    position: absolute;
+    top: -62%; /* 矢印の頭部の位置調整 */
+    left: calc(100% - 10px); /* 矢印の頭部が線の端に来るように */
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 0 5px 10px; /* 矢印のサイズ調整 */
+    border-color: transparent transparent transparent black;
+    opacity: 0;
+}
+
+
+
+
+
+                                        /* 矢印 OTHER*/
+/* キーフレームの定義 */
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 1; }
+}
+
+/* 最初の水平線のアニメーション */
+.horizontal-line.firstO {
+    animation: fadeInOut 3s ease-in-out forwards;
+}
+
+/* 垂直線のアニメーション */
+.vertical-lineO {
+    animation: fadeInOut 3s ease-in-out 1.5s forwards; /* 1.5秒遅延で開始 */
+}
+
+/* 二番目の水平線のアニメーション */
+.horizontal-line.secondO {
+    animation: fadeInOut 3s ease-in-out 3s forwards; /* 3秒遅延で開始 */
+}
+
+/* 矢印の頭のアニメーション */
+.arrow-headO {
+    animation: fadeInOut 3s ease-in-out 3s forwards; /* 4.5秒遅延で開始 */
+}
+
+.arrowO {
+    position:absolute;
+    top: 740px;
+    left: 350px;
+    width: 500px; /* 全体の幅を設定 */
+    height: 200px; /* 全体の高さを設定 */
+}
+
+.horizontal-lineO{
+    position: absolute;
+    height: 2px; /* 線の太さ */
+    background-color: black;
+    opacity: 0;
+}
+
+.horizontal-line.firstO {
+    width: 30%; /* 最初の水平線の長さ */
+    top: 10%;
+    left: 0;
+    opacity: 0;
+}
+
+.vertical-lineO {
+    position: absolute;
+    width: 2px; /* 線の太さ */
+    height: 130%; /* 垂直線の長さ */
+    top: -120%;
+    left: 30%;
+    background-color: black;
+    opacity: 0;
+}
+
+.horizontal-line.secondO {
+    width: 70%; /* 二番目の水平線の長さ */
+    top: -120%;
+    left: 30%;
+    background-color: black;
+    opacity: 0;
+}
+
+.arrow-headO {
+    position: absolute;
+    top: -122%; /* 矢印の頭部の位置調整 */
+    left: calc(100% - 10px); /* 矢印の頭部が線の端に来るように */
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 0 5px 10px; /* 矢印のサイズ調整 */
+    border-color: transparent transparent transparent black;
+    opacity: 0;
+}
+
+
+
+
+.Long1 {
+    position: absolute;
+    top: 25px;
+    left: 860px;
+    width: 1000px; /* グラフの幅を200ピクセルに設定 */
+    height: 450px; /* グラフの高さを150ピクセルに設定 */
+    overflow: hidden; /* はみ出た部分を隠す */
+
+    
+}
+
+.Long2 {
+    position: absolute;
+    top: 475px;
+    left: 860px;
+    width: 1000px; /* グラフの幅を200ピクセルに設定 */
+    height: 450px; /* グラフの高さを150ピクセルに設定 */
+    overflow: hidden; /* はみ出た部分を隠す */
+
+    
+}
+
+
+.NLong {
+    position: absolute;
+    top: 25px;
+    left: 860px;
+    width: 500px; /* グラフの幅を200ピクセルに設定 */
+    height: 450px; /* グラフの高さを150ピクセルに設定 */
+    overflow: hidden; /* はみ出た部分を隠す */
+
+    
+}
+.NShort {
+    position: absolute;
+    top: 25px;
+    left: 1250px;
+    width: 600px; /* グラフの幅を200ピクセルに設定 */
+    height: 450px; /* グラフの高さを150ピクセルに設定 */
+    overflow: hidden; /* はみ出た部分を隠す */
+
+    
+}
+.Etried {
+    position: absolute;
+    top: 475px;
+    left: 860px;
+    width: 500px; /* グラフの幅を200ピクセルに設定 */
+    height: 450px; /* グラフの高さを150ピクセルに設定 */
+    overflow: hidden; /* はみ出た部分を隠す */
+
+    
+}
+
+.Eexecuted {
+    position: absolute;
+    top: 475px;
+    left: 1260px;
+    width: 500px; /* グラフの幅を200ピクセルに設定 */
+    height: 450px; /* グラフの高さを150ピクセルに設定 */
+    overflow: hidden; /* はみ出た部分を隠す */
+
+    
+}
+.CET {
+    position: absolute;
+    top: 475px;
+    left: 1560px;
+    width: 300px; /* グラフの幅を200ピクセルに設定 */
+    height: 350px; /* グラフの高さを150ピクセルに設定 */
+    overflow: hidden; /* はみ出た部分を隠す */
+
+    
+}
+.Cdirection {
+    position: absolute;
+    top: 730px;
+    left: 1560px;
+    width: 300px; /* グラフの幅を200ピクセルに設定 */
+    height: 170px; /* グラフの高さを150ピクセルに設定 */
+    overflow: hidden; /* はみ出た部分を隠す */
+
+    
+}
+
+
+
+.WLcondition {
+    position: absolute;
+    top: 25px;
+    left: 860px;
+    width: 990px; /* グラフの幅を200ピクセルに設定 */
+    height: 300px; /* グラフの高さを150ピクセルに設定 */
+    overflow: hidden; /* はみ出た部分を隠す */
+    z-index: 10;
+
+}
+
+.TPcondition {
+    position: absolute;
+    top: 340px;
+    left: 860px;
+    width: 990px; /* グラフの幅を200ピクセルに設定 */
+    height: 300px; /* グラフの高さを150ピクセルに設定 */
+    overflow: hidden; /* はみ出た部分を隠す */
+    z-index: 10;
+
+}
+
+.Profitcondition {
+    position: absolute;
+    top: 640px;
+    left: 860px;
+    width: 990px; /* グラフの幅を200ピクセルに設定 */
+    height: 300px; /* グラフの高さを150ピクセルに設定 */
+    overflow: hidden; /* はみ出た部分を隠す */
+    z-index: 10;
+
+}

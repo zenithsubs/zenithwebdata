@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel = "stylesheet" href="./style2.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="description" content = "zenithpage">
+
+
+    <script type="text/javascript">
+        function refreshIframes() {
+            var iframes = document.getElementsByTagName('iframe');
+            for (var i = 0; i < iframes.length; i++) {
+                iframes[i].src = iframes[i].src;
+            }
+        }
+        setInterval(refreshIframes, 10000); // Refresh every 1000 milliseconds (1 second)
+    </script>
+</head>
+
+
+<body>
+    <h1 class="title"><img src="image/logob.png" ></h1>
+    <div class="triangle"></div>
+    <div class="boxy"></div>
+    <div class="arrow">
+        <div class="horizontal-line first"></div>
+        <div class="vertical-line"></div>
+        <div class="horizontal-line second"></div>
+        <div class="arrow-head"></div>
+    </div>
+    
+    
+
+    <h1 class="amounttdy"><img src="image/amttdy.png" ></h1>
+
+    <!-- winrate -->
+    <h1 class="lw"><img src="image/L.png" ></h1>
+    <h1 class="sw"><img src="image/S.png" ></h1>
+    <h1 class="bw"><img src="image/B.png" ></h1>
+    <!-- <h1 class="live"><img src="image/live.png" ></h1> -->
+    <div class="loading-bar"></div>
+
+
+
+    <div class="iframe-container">
+        <h2 class="graph1">
+            <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR4Nh5thkk8hTR_nk6uYMJT3lS8e9vnjLWtnh8Kqb0TF-Gw8Hc47YsvZ_AwMeki2VZnRPpS-UOyA23-/pubchart?oid=1195401651&amp;format=interactive" style="width:100%; height:600px;"></iframe>
+        </h2>
+        
+        <h2 class="graph2">
+            <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR4Nh5thkk8hTR_nk6uYMJT3lS8e9vnjLWtnh8Kqb0TF-Gw8Hc47YsvZ_AwMeki2VZnRPpS-UOyA23-/pubchart?oid=1473356473&amp;format=interactive"style="width:100%; height:600px;"></iframe>
+        </h2>
+        <h2 class="graph3">
+            <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR4Nh5thkk8hTR_nk6uYMJT3lS8e9vnjLWtnh8Kqb0TF-Gw8Hc47YsvZ_AwMeki2VZnRPpS-UOyA23-/pubchart?oid=1748911468&amp;format=interactive"style="width:100%; height:600px;"></iframe>
+        </h2>
+
+        <h2 class = "amttdy">
+            <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR4Nh5thkk8hTR_nk6uYMJT3lS8e9vnjLWtnh8Kqb0TF-Gw8Hc47YsvZ_AwMeki2VZnRPpS-UOyA23-/pubchart?oid=223188587&amp;format=interactive"style="width:100%; height:600px;"></iframe>
+        </h2>
+        <h2 class = "pl">
+            <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR4Nh5thkk8hTR_nk6uYMJT3lS8e9vnjLWtnh8Kqb0TF-Gw8Hc47YsvZ_AwMeki2VZnRPpS-UOyA23-/pubchart?oid=1201747404&amp;format=interactive"style="width:100%; height:600px;"></iframe>
+        </h2>
+        <h2 class = "ps">
+            <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR4Nh5thkk8hTR_nk6uYMJT3lS8e9vnjLWtnh8Kqb0TF-Gw8Hc47YsvZ_AwMeki2VZnRPpS-UOyA23-/pubchart?oid=323874887&amp;format=interactive"style="width:100%; height:600px;"></iframe>
+        </h2>
+        <h2 class = "pt">
+            <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR4Nh5thkk8hTR_nk6uYMJT3lS8e9vnjLWtnh8Kqb0TF-Gw8Hc47YsvZ_AwMeki2VZnRPpS-UOyA23-/pubchart?oid=176789913&amp;format=interactive"style="width:100%; height:600px;"></iframe>
+        </h2>
+    </div>
+
+
+    <h2 class="subtitle"><img src="image/shiyousai.png" ></h2>
+    
+
+    <h3 class="sstitle today"><img src="image/today.png" ></h3>
+    <h3 class="sstitle week"><img src="image/week.png" ></h3>
+    <h3 class="sstitle total"><img src="image/total.png" ></h3>
+    <h3 class="sstitle shiyousai"><img src="image/other.png" ></h3>
+
+    <!-- マウスカーソルよう -->
+    <a href="index.html">
+        <div class="box1"></div>
+    </a>
+
+    <a href="week.html">
+        <div class="box2"></div>
+    </a>
+
+    <a href="total.html">
+        <div class="box3"></div>
+    </a>
+
+
+
+    <div class="box4">
+        <div class="side-menu">
+            <ul>
+                <li><a href="Exlong.html">Executed Long Analysis</a></li>
+                <li><a href="Clong.html">Analysis for each Long condition</a></li>
+                <li><a href="Exshort.html">Executed Short Analysis</a></li>
+                <li><a href="Cshort.html">Analysis for each Short condition</a></li>
+                <li><a href="others.html">Other Analysis</a></li>
+
+            </ul>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
